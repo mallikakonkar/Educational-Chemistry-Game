@@ -1,0 +1,87 @@
+body{
+    font-family: 'Oswald', sans-serif;
+    background-image: url(background2.jpg);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.rightchild{
+  background-color: rgba(255,255,255,0.7);
+  border: 2px solid black;
+  border-radius: 5px;
+  top: 0;
+  width:52%; 
+  height: auto;
+  right:0; 
+  bottom: 0;
+  position:absolute;
+  text-align: center;
+  overflow: auto;
+}
+.leftchild{
+  height: 100%;
+  width: 48%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.golfball{
+  position: absolute;
+  top : 600px;
+  left: 300px;
+}
+
+@keyframes move {
+from {top : var(--t,600px);
+  left: var(--l,300px);
+}
+  to {
+    top : var(--m,450px);
+  left: var(--w,250px);
+  }
+}
+.container1{
+  top: 0;
+  text-align: center;
+  /*width:60%; */
+  /*right:0; */
+  bottom: 0;
+  margin: 0 10%;
+  /*background-color: red;*/
+  position:absolute;
+  align-items: center;
+  width: 80%;
+}
+
+.guess{
+  /*position: absolute;*/
+  font-size: 40px;
+  line-height: 49px;
+  color: #0E9713;
+  text-align: center;
+  width: 100%;
+}
+.question{
+  /*position: absolute;*/
+  font-size: 35px;
+  width: 100%;
+  line-height: 43px;
+  text-align: center;
+  color: #000000;
+}
+
+.ansbutton{
+  position: relative;
+  z-index: 5;
+  background:rgba(255,255,255,1);
+  height: 60px;
+  width: 100%;
+  margin-top: 20px;
+  border-radius: 10px;
+  border-color: white;
+}
+.ansbutton:focus{
+  outline: none;
+}

@@ -1,0 +1,41 @@
+body{
+    font-family: 'Oswald', sans-serif;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container1 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% auto 25%;
+    height: -webkit-fill-available;
+}
+
+.col_2{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    align-self: center;
+    place-self: center;
+}
+
+
+.btn{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 55px;
+    padding: 30px 50px;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.btn-light{
+    background-color: white;
+}
+
+.btn-dark{
+    background-color: black;
+}
